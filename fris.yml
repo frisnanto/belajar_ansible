@@ -11,6 +11,6 @@
 
     - name: install mysql server
       apt:
-          name: mysql-server
+          name: default-mysql-server
           state: latest
           
