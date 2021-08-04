@@ -11,14 +11,14 @@
 
     - name: install mysql server
       yum:
-        name: mysql-server
+        name: default-mysql-server
         state: latest
 
     - name: enable service mysql (autostart on boot)
       service:
         name: mysql
         enabled: yes
-        
+
     - name: start service mysql 
       service:
         name: mysql
