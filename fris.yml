@@ -10,16 +10,16 @@
         update_cache: yes
 
     - name: install mysql server
-      apt:
-          name: default-mysql-server
-          state: latest
-          
+      yum:
+        name: mysql-server
+        state: latest
+
     - name: enable service mysql (autostart on boot)
-          service:
-            name: mysql
-            enabled: yes
+      service:
+        name: mysql
+        enabled: yes
         
     - name: start service mysql 
-          service:
-            name: mysql
-            state: started
+      service:
+        name: mysql
+        state: started
