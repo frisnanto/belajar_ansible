@@ -1,8 +1,8 @@
 [all:vars]
 
 [myhost]
-labfris1
+ansible1
 
 [allhost]
-labfris2
-labfris1
+ansible2
+ansible1
